@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Магазин iphone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            border: 1px solid red;
+            padding: 10px;
+        }
+        .carousel {
+            border: 1px solid red;
+            margin: 20px 0;
+        }
+        .recommended {
+            border: 1px solid red;
+            padding: 15px;
+        }
+        .subscribe {
+            background: #f8d7da;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .about {
+            padding: 15px;
+        }
+        .footer {
+            background: #f8d7da;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Навігація -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">TechShop</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <form class="d-flex ms-3">
+                <input class="form-control me-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success" type="submit">🔍</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Карусель -->
+
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <img src="https://www.apple.com/ua/iphone-16/images/overview/product-viewer/iphone/all_colors__flhn5cmb1t26_large.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.apple.com/v/iphone-16e/a/images/overview/product-stories/display/display__b6r1qwosio4i_large.jpg"  alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.apple.com/ua/iphone-16-pro/images/overview/product-viewer/iphone-pro/all_colors__fdpduog7urm2_large.jpg"  alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- Рекомендовані товари -->
+<div class="container recommended mt-4">
+    <h4>Рекомендовані</h4>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="border p-3">
+                <img src="data:image/avif;base64,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" class="d-block w-100" alt="iphone">
+                <p>iphone 13 pro 512гб
+                 <p>Зручний і надійний телефон</p>
+                </p>
+                <p>900$</p>
+                <button class="btn btn-success">Купити</button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="border p-3">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSD4SygRfm0anayu7cDADm6QZei2OvuyceCxrIejGUhXMaYvXlEfW6Vme3z_-xmOGbxx_IiNNPL6FAVb68Wzlb8aZpcY1MT3_mEGsL7EMFD35ct9b4I1VZ8jHkFNcq9hv1j&usqp=CAc" class="d-block w-100" alt="iphone">
+                <p>iphone 15 256гб</p>
+                <p>Це є самий найкрасивіший телефон в нашому асортименті</p>
+                <p>1200$</p>
+                <button class="btn btn-success">Купити</button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="border p-3">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTkp6KcbVNfhF-wchFu2SnwwbdFQyJvuhaus10AfMkU8QWm2tVZI5uWBetCeUYvIrDyOQR3J8D4xQAVF10-CtEF7YmWjl_KwEVgxmCT6vKIzKeKJ2nyBOsURIla&usqp=CAc" class="d-block w-100" alt="iphone">
+                <p>iphone 15 pro max</p>
+                <p>Дорогий телефон але потужний </p>
+                <p>1500$</p>
+                <button class="btn btn-success">Купити</button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="border p-3">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS7KKkk9XMrU7Uj25QA2fC7-Xq4pizq4xmybtlLFGDEQAqglU6pnFp9IgjQ4QSh1N5KxTQUxganw646nk_k5dhVygav1xas19e1jH5VLCYoB8FHb6TPFizJu7M4IigYPQL91Q&usqp=CAc" class="d-block w-100" alt="iphone">
+                <p>iphone 14</p>
+                <p>Надійний і компактний телефон </p>
+                <p>1100$</p>
+                <button class="btn btn-success">Купити</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Форма підписки -->
+<div class="container mt-4">
+    <div class="subscribe text-center">
+        <h5>Підписка</h5>
+        <input type="email" class="form-control d-inline w-50" placeholder="email">
+        <button class="btn btn-secondary">Відправити</button>
+    </div>
+</div>
+
+<!-- Про нас -->
+<div class="container about mt-4">
+    <h4>Про нас</h4>
+    <div class="row">
+        <div class="col-md-8">
+            <p>Lorem Ipsum- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="border text-center py-5">
+                <strong>Зображення</strong>
+                <img src="https://spectrum.ieee.org/media-library/a-man-walks-past-the-exterior-of-a-building-labelled-techshop-in-san-francisco-ca.jpg?id=25584425&width=400&height=300" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Футер -->
+<div class="footer mt-4">
+    <p>© Creator IT Academy з 2025 року</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
